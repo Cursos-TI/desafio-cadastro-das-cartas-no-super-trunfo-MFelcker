@@ -110,7 +110,7 @@ int main() {
             printf("PIB per capita: %.2f reais\n", pibpercapita2);
             printf("O Super Poder da Carta 2 é %.2f\n\n", superPoder2);
         
-    // Comparação das Cartas
+    // Cálculo de Comparação das Cartas
     int venceuPopulacao = populacao1 > populacao2;
     int venceuArea = area1 > area2;
     int venceuPIB = pib1 > pib2;
@@ -119,7 +119,7 @@ int main() {
     int venceuDensidade = densidade1 < densidade2;
     int venceuSuperPoder = superPoder1 > superPoder2;
 
-    //Exibição do resultado
+    /*Exibição do resultado
     printf("***Disputa***\n\n");
     printf("População: A Carta 1 venceu? %d\n", venceuPopulacao);
     printf("Área: A Carta 1 venceu? %d\n", venceuArea);
@@ -128,6 +128,19 @@ int main() {
     printf("Densidade Populacional: A Carta 1 venceu? %d\n", venceuDensidade);
     printf("PIB per Capita: A Carta 1 venceu? %d\n", venceuPIBPerCapita);
     printf("Super Poder: A Carta 1 venceu? %d\n\n", venceuSuperPoder);
+    */
+
+    //Comparação das cartas utilizando If-Else
+    printf("***Disputa quesito população***\n\n");
+    printf("População da carta 1: %lu\n", populacao1);
+    printf("População da carta 2: %lu\n\n", populacao2);
+    
+    if (populacao1 > populacao2){
+        printf ("Quesito população: Carta 1 venceu!\n\n");
+    }
+    else {
+        printf ("Quesito população: Carta 2 venceu!\n\n");
+    }
 
     printf("***FIM DO JOGO***\n\n");
         
